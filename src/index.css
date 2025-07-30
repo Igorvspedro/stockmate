@@ -56,6 +56,12 @@ Colors: Black, Red, White theme with elegant gradients and animations
     /* Layout */
     --radius: 0.75rem;
 
+    /* Header and Footer */
+    --header-background: 0 84% 60%;
+    --header-foreground: 0 0% 98%;
+    --footer-background: 0 0% 0%;
+    --footer-foreground: 0 0% 98%;
+
     /* Custom gradients */
     --gradient-primary: linear-gradient(135deg, hsl(0 0% 9%), hsl(0 0% 15%));
     --gradient-accent: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 90% 50%));
@@ -140,6 +146,12 @@ Colors: Black, Red, White theme with elegant gradients and animations
     /* Shadows - Dark mode */
     --shadow-elegant: 0 10px 25px -5px hsl(0 0% 0% / 0.3), 0 4px 6px -2px hsl(0 0% 0% / 0.1);
     --shadow-glow: 0 0 40px hsl(0 84% 60% / 0.25);
+
+    /* Header and Footer - Dark mode */
+    --header-background: 0 84% 45%;
+    --header-foreground: 0 0% 98%;
+    --footer-background: 0 0% 0%;
+    --footer-foreground: 0 0% 98%;
 
     /* Sidebar colors */
     --sidebar-background: 0 0% 5%;

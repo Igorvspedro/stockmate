@@ -36,7 +36,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 h-16 bg-card border-b border-border shadow-elegant">
+    <header className="fixed top-0 left-0 right-0 z-50 h-16 bg-header text-header-foreground border-b border-border shadow-elegant">
       <div className="flex items-center justify-between h-full px-6">
         {/* Logo and Title */}
         <div className="flex items-center space-x-3">
@@ -44,8 +44,8 @@ const Header: React.FC = () => {
             <span className="text-white font-bold text-lg">S</span>
           </div>
           <div>
-            <h1 className="text-xl font-bold text-foreground">StockMate</h1>
-            <p className="text-xs text-muted-foreground">Sistema de Gerenciamento</p>
+            <h1 className="text-xl font-bold text-header-foreground">StockMate</h1>
+            <p className="text-xs text-header-foreground/70">Sistema de Gerenciamento</p>
           </div>
         </div>
 
@@ -54,7 +54,7 @@ const Header: React.FC = () => {
           {user && (
             <div className="flex items-center space-x-3">
               <div className="text-right hidden sm:block">
-                <p className="text-sm font-medium text-foreground">{user.name}</p>
+                <p className="text-sm font-medium text-header-foreground">{user.name}</p>
                 <span className={`inline-block px-2 py-1 text-xs rounded-full ${getUserLevelColor(user.level)}`}>
                   {getUserLevelBadge(user.level)}
                 </span>
