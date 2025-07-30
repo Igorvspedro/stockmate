@@ -6,7 +6,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import ItemCard from '@/components/ItemCard';
 import ItemModal from '@/components/ItemModal';
-import UserLevelSelector from '@/components/UserLevelSelector';
 import { useUser } from '@/contexts/UserContext';
 import { StockItem, STOCK_CATEGORIES } from '@/types/stock';
 import { useToast } from '@/hooks/use-toast';
@@ -122,9 +121,6 @@ const Dashboard: React.FC = () => {
 
   return (
     <div className="space-y-6 fade-in">
-      {/* User Level Selector for Demo */}
-      <UserLevelSelector />
-
       {/* Header */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <div>
